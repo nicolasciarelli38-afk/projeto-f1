@@ -10,6 +10,6 @@ def buscar_equipe(nome):
         "williams":  {"motor": 7, "aero": 6, "tecnico": 7},
         "audi":  {"motor": 6, "aero": 6, "tecnico": 7}
     }
-    
+
     
     return dados.get(nome, {"motor": 5, "aero": 5, "tecnico": 5})
