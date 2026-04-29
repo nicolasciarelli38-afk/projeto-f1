@@ -1,1 +1,14 @@
-🏎️ F1 Strategy SimulatorUm simulador de estratégia de corrida em Python focado no equilíbrio entre performance de motor e desgaste de pneus. O projeto utiliza lógica de probabilidades para simular ultrapassagens e decisões críticas de pit stop.🕹️ Como o Jogo FuncionaO simulador processa a corrida em blocos de 5 voltas. A cada bloco, o jogo calcula sua performance comparada à inteligência artificial (IA).Gerenciamento de Risco: Quanto mais você corre com o mesmo pneu, maior o risco de perda de performance ou falha mecânica.Decisões em Tempo Real: O "Rádio do Engenheiro" avisa quando a janela de box está aberta. Cabe a você decidir se para ou tenta o "overcut".📊 A Matemática do GridPara garantir um jogo justo, utilizamos uma fórmula de amortecimento para as ultrapassagens:$$Performance = (Motor \times 7) - (Pneu \times 1.5)$$Onde:Motor: Potência base da sua equipe.Pneu: Porcentagem de desgaste (0 a 100).Margem de Ultrapassagem: Você só ganha ou perde posições se a diferença para a IA for maior que 20 pontos, simulando a dificuldade real de ultrapassar na pista.📂 Organização dos Arquivosplay.py: O loop principal com menu interativo e interface de usuário.calculos.py: O "cérebro" do jogo, onde as fórmulas de risco e performance residem.equipes.py: Banco de dados com os status técnicos de cada escuderia.🚀 Próximos Passos (To-Do)[ ] Adicionar sistema de clima dinâmico (Chuva/Pista Seca).[ ] Implementar danos aleatórios no carro.[ ] Criar um modo campeonato com pontuação acumulada.🛠️ Como ExecutarBasta ter o Python instalado e rodar:
+🏎️ F1 Strategy Simulator
+
+Um simulador de estratégia de corrida em Python focado no equilíbrio entre performance de motor e desgaste de pneus. O projeto utiliza lógica de probabilidades para simular ultrapassagens e decisões críticas de pit stop.
+🕹️ Como o Jogo Funciona
+
+O simulador processa a corrida em blocos de 5 voltas. A cada bloco, o jogo calcula sua performance comparada à inteligência artificial (IA).Gerenciamento de Risco: Quanto mais você corre com o mesmo pneu, maior o risco de perda de performance ou falha mecânica.Decisões em Tempo Real: O "Rádio do Engenheiro" avisa quando a janela de box está aberta. Cabe a você decidir se para ou tenta o "overcut".
+
+📊 A Matemática do Grid
+
+Para garantir um jogo justo, utilizamos uma fórmula de amortecimento para as ultrapassagens:$$Performance = (Motor \times 7) - (Pneu \times 1.5)$$Onde:Motor: Potência base da sua equipe.Pneu: Porcentagem de desgaste (0 a 100).Margem de Ultrapassagem: Você só ganha ou perde posições se a diferença para a IA for maior que 20 pontos, simulando a dificuldade real de ultrapassar na pista.
+ 
+ 📂 Organização dos Arquivos
+ 
+play.py: O loop principal com menu interativo e interface de usuário.calculos.py: O "cérebro" do jogo, onde as fórmulas de risco e performance residem.equipes.py: Banco de dados com os status técnicos de cada escuderia.🚀 Próximos Passos (To-Do)[ ] Adicionar sistema de clima dinâmico (Chuva/Pista Seca).[ ] Implementar danos aleatórios no carro.[ ] Criar um modo campeonato com pontuação acumulada.🛠️ Como ExecutarBasta ter o Python instalado e rodar: python play.py
