@@ -1,7 +1,7 @@
 # Arquivo: equipes.py
 
 def buscar_equipe(nome):
-    # Rezando pra dar certo
+    
     dados = {
         "red bull": {"motor": 10, "aero": 10, "tecnico": 10},
         "mercedes": {"motor": 8, "aero": 8, "tecnico": 9},
