@@ -7,7 +7,7 @@ O simulador processa a corrida em blocos de 5 voltas. A cada bloco, o jogo calcu
 
 📊 A Matemática do Grid
 
-Para garantir um jogo justo, utilizamos uma fórmula de amortecimento para as ultrapassagens:$$Performance = (Motor \times 7) - (Pneu \times 1.5)$$Onde:Motor: Potência base da sua equipe.Pneu: Porcentagem de desgaste (0 a 100).Margem de Ultrapassagem: Você só ganha ou perde posições se a diferença para a IA for maior que 20 pontos, simulando a dificuldade real de ultrapassar na pista.
+Para garantir um jogo justo, utilizamos uma fórmula de amortecimento para as ultrapassagens:$$Performance = (Motor \times 10) - (Pneu \times 1.5)$$Onde:Motor: Potência base da sua equipe.Pneu: Porcentagem de desgaste (0 a 100).Margem de Ultrapassagem: Você só ganha ou perde posições se a diferença para a IA for maior que 20 pontos, simulando a dificuldade real de ultrapassar na pista.
  
  📂 Organização dos Arquivos
  
