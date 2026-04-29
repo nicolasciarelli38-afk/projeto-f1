@@ -11,5 +11,5 @@ def buscar_equipe(nome):
         "audi":  {"motor": 6, "aero": 6, "tecnico": 7}
     }
     
-    # Para os q quiserem quebrar o jogo
+    
     return dados.get(nome, {"motor": 5, "aero": 5, "tecnico": 5})
